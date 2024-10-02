@@ -27,7 +27,7 @@ class Pato {
             this.nombre
     }" loading="lazy" class="pato-img">
           <div class="pato-info">
-              <h3>${this.nombre +" " +  this.apellido}${relacion ? `<br>(${relacion})` : ""}</h3>
+              <h3>${this.nombre + " " +  this.apellido}${relacion ? `<br>(${relacion})` : ""}</h3>
               <p>Edad: ${this.edad}</p>
               <p>Género: ${this.genero}</p>
           </div>
@@ -48,7 +48,6 @@ class Familia {
 
   generarArbolHTML(pato = this.raiz) {
     if (!pato) return "";
-
     let html = `<div class="arbol-nodo"><div class="arbol-contenedor">`;
     html += pato.generarHTML();
 
@@ -74,7 +73,8 @@ class Familia {
 }
 //Clase PatoFamoso
 class PatoFamoso extends Pato{
-constructor(){}
+constructor () {
+}
 }
 
 // Clase PatoCiudad
